@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Heebo' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/d3acebc09b.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-x" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                <div id="none"></div>
+            </nav>
+            <div class="row">
+                <div class="header-text">
+                    <h1>Hi, I am <br><span>Bibek Bhattacharya</span></h1>
+                    <p>CSE 3rd Year Undergrad</p>
+                    <p>I am a <span class="auto-type"></span></p>
+                    <a href="" class="btn btn2">Download CV</a>
+                </div>
+                <div class="about-col-1" id="home-img">
+                    <img src="profile.jpg" alt="user">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="" alt="user">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p>Currently in my final year of pursuing a BTech degree in Computer Science and Engineering. I possess a profound interest in Java Spring Architecture , Machine Learning accompanied by a passion for coding. Eager to explore new challenges and apply my skills to real- world problems. Committed to continuous learning and collaborative teamwork.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">SKILLS</p>
+                        <p class="tab-links" onclick="opentab('education')">EDUCATION</p>
+                        <p class="tab-links" onclick="opentab('achievements')">TRAINING & ACHIEVEMENTS</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span><b>Machine Learning</b></span><br>
+                            ML Expertise: <b>Feature Engineering, Computer vision, Regression, Classification, Unsupervised Learning.</b><br>
+                            </li>
+                            <li><span><b>Java Expertise</b></span><br>
+                            <b>Spring Framework, Hibernate, JPA, Spring MVC, Spring security, Java Socket.</b><br>
+                            </li>
+                            <li><span><b>Technical Skills</b></span><br>Programming Languages: <b>Java, Python, C, HTML/CSS, JavaScript, Node JS </b><br>
+                            Web Framework: <b>Spring and spring mvc, Hibernate </b> <br>Integrated Development Environments (IDEs): <b>Eclipse, Bracket, Visual Studio Code, pycharm</b></li>
+                            <li><span><b>Database language</b></span><br>
+                            <b>SQL, MongoDB</b></li>
+                            <li><span><b>Tools</b></span><br>
+                            <b>Spring, Colab, Pandas, Scikit-Learn, Matplotlib, OpenCV, Git</b></li>
+                            <li><span><b>Spoken Languages</b></span><br>
+                            <b>Bengali (Native), English (Proficient), Hindi (Proficient)</b></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>University of Engineering and management, Kolkata (2021-2025)</span><br>B.Tech in <b>Computer Science and Engineering</b><br>Related Coursework: Data Structures & Algorithms, Operating Systems, Artificial Intelligence, Object-Oriented Programming, DBMS, Computer Networks <br><b>GPA: 8.1/10</b> </li>
+                            <li><span>Krishnapur Adarsha Vidyamandir (2019-2021)</span><br>Higher Secondary<br>Coursework: Physics, Chemistry, Mathematics, Biology, Languages <br><b>Grade: 83.87%</b></li>
+                            <li><span>Krishnapur Adarsha Vidyamandir(2019)</span><br>Secondary <br><b>Grade: 87% </b></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="achievements">
+                        <ul>
+                            <li><span>Full stack Web Development Training | Euphoria GenX</span><br>Built the backend and APIs for building a delivery based web Application using nodejs, MongoDB (March 20224) :<a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i> View Certificate</a></li>
+                            <li><span>Machine Learning Training | Euphoria GenX</span><br>Develop a Machine learning based crop prediction model to make decisions about crop selection and quality (sep 2023 - Dec 2023) :<a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i> View Certificate</a></li>
+                            <li><span>Certified in Microsoft Azure Cloud Services</span> <br>Certified by Microsoft in Azure Cloud based services : <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i> View Certificate</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="projects">
+        <div class="container">
+            <h1 class="subtitle">My Projects</h1>
+            <div class="work-list">
+                <div class="active-work">
+                    <h2>Smart Contact Manager</h2>
+                    <p>It is a web application that helps user to manage contact with image and advance features.</br> Java, Spring MVC, spring security used for the bcakend and thyemleaf, html, css, java script used for backend.</p>
+                    
+                    <a href="https://github.com/Bibek-cs2025/SmartContactManager_2025.git"><i class="fa-solid fa-arrow-up-right-from-square"></i> Visit Project</a>
+                    <a href=""><i class="fa-solid fa-globe icon"></i> View Live Demo</a>
+                </div>
+                <div class="active-work">
+                    <h2>Breast Cancer Prediction </h2>
+                    <p>Developed a machine learning model using the Breast Cancer Wisconsin dataset, achieving 89% accuracy in predicting malignant and benign tumors through Logistic Regression, SVM Algorithm.</p>
+                    
+                    <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i> Visit Project</a>
+                    
+                    <a href=""><i class="fa-solid fa-globe icon"></i> View Live Demo</a>
+                </div>
+                <div class="active-work">
+                    <h2>Movie Recommandation System </h2>
+                    <p>This is a machine learning project that helps user to find similiar type of movie based on (geners, type, emotions, user age, movie rating) using vectorization and nearest datapoint.</p>
+                    
+                    <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i> Visit Project</a>
+                    <a href=""><i class="fa-solid fa-globe icon"></i> View Live Demo</a>
+                </div>
+                <div class="work">
+                    <h2>Chatify</h2>
+                    <p>This is a chat application helps to send group message, private message, and protected message. Languages used- Java, Java Socket, Swing. </p>
+                    
+                    <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i> Visit Project</a>
+                </div>
+                <div class="work">
+                    <h2>Tutorific</h2>
+                    <p>This is a group web application project thats helps to connect between teachers and students and to manage date and fees delivery system using node js, MongoDB, JavaScript, html, css.</p>
+                    
+                    <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i> Visit Project</a>
+                </div>
+            </div>
+            <button class="btn" id="project-btn" onclick="opendiv()">See more</button>
+            <button class="btn hide-btn" id="project-btn-less" onclick="closediv()">See less</button>
+        </div>
+    </div>
+
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="subtitle">Contact Me</h1>
+                    
+                    <p><i class="fa-solid fa-envelope"></i> bibek.bhattachrjee@gmail.com</p>
+                    
+                    <p><i class="fa-solid fa-phone"></i>+91 9874065442</p>
+                    <p><i class="fa-solid fa-computer"></i><a style="text-decoration: underline; color: aliceblue;" href="">LeetCode Profile </a></p>
+                    <div class="social-icons">
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                        <a href=""><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your name" required>
+                        <input type="email" name="Email" placeholder="Your email" required>
+                        <textarea name="Message" rows="6" placeholder="Your message"></textarea>
+                        <button class="btn btn2" type="submit">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <script>
+        var typed= new Typed(".auto-type",{
+            strings:["Machine Learning Enthusiast","Problem Solver","Consistent Learner","Passionate coder","Java developer"],
+            typeSpeed: 100,
+            backSpeed: 50,
+            backDelay: 1000,
+            loop: true
+        })
+    </script>
+</body>
+</html>
